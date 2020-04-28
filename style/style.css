@@ -7,6 +7,65 @@
 html,
 body {
 	height: 100%;
+	width: 100%;
+}
+
+html {
+	font-family: "helvetica neue", sans-serif;
+}
+.nav {
+	border-bottom: 1px solid #eaeaeb;
+	text-align: right;
+	height: 70px;
+	line-height: 70px;
+}
+.menu {
+	margin: 0 30px 0 0;
+}
+
+.menu a {
+    clear: right;
+	text-decoration: none;
+	color: black;
+	margin: 0 30px;
+	line-height: 70px;
+}
+
+span {
+	color: hotpink;
+}
+
+label {
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+	display: none;
+}
+
+@media only screen and (max-width: 500px) {
+    label{
+        display: block;
+        cursor: pointer;
+    }
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a{
+        display: block;
+        border-bottom: 1px solid #eaeaeb;
+        margin: 0;
+    }
+    #toggle:checked + .menu{
+        display: block;
+    }
 }
 
 .container {
@@ -15,7 +74,7 @@ body {
 	background: #11ea8b;
 }
 
-.menu ul {
+/* .menu ul {
 	display: inline-flex;
 	margin: 50px;
 }
@@ -25,7 +84,7 @@ body {
 	margin: 0 20px;
 	color: black;
 	cursor: pointer;
-}
+} */
 
 .logo img {
 	width: 30px;
