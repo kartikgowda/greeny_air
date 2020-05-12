@@ -1,58 +1,177 @@
 <html>
-    <head>
-        <title>GreenyAir</title>
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
-        <meta charset="utf-8">
-        <meta name="viewport" content="width-device-widht, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="nav">
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle" />
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-                <a href="#">Product</a>
+
+<head>
+    <title>Greeny Air Website Prototype</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/5c2028e149.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#"><img src="images/kawai.png" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CHALLENGES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">CONTACT US</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
+    </section>
+
+    <!------------------BANNER SECTION-------------------->
+    <section id="banner">
         <div class="container">
-            <div class="banner">
-                <div class="app-text">
-                    <h1>Our basic text</h1>
-                     <p>
-                        Provide users with information about how small actions and activities have an impact on the environment.
-                        <br>Help users set a routine which they can perform to help reduce the greenhouse gas emissions by performing small changes to their daily activities <br>
-                        Provide easy daily step by step guide with increasing difficulty to improve lifestyle and environmental effects.
-                     </p>
-                     <div class="play-btn">
-                         <div class="play-btn-inner">
-                             <i class="fa fa-play"></i>
-                         </div>
-                         <small><b>Learn More</b></small>
-                     </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="promo-title">SAVE THE PLANET CUNT</p>
+                    <p>Need a jump start? Read on to learn a few simple day-to-day strategies to help the environment.
+                        You might be surprised at how much they help you in the process.</p>
+                    <a href="#"><img src="images/play.png" class="play-btn">Take the Challenge</a>
                 </div>
-                <div class="app-picture">
-                    <img src="images/leaf.png">
+                <div class="col-md-6 text-center">
+                    <img src="images/home.png" class="img-fluid" style="height:500px;">
                 </div>
-            </div>
-            <div class="quick-links">
-                <ul>
-                    <li><i class="fa fa-share-alt"></i><p>Share to</p></li>
-                        <li><i class="dfa-newspaper"></i><p>RECENT NEWS</p></li>
-                        <li><i class="fa fa-cog"></i><p>Analytics</p></li>
-                        <li><i class="far fa-piggy-bank"></i><p>Saved</p></li>
-                </ul>
-            </div>
-            <div class="social-icons">
-                <ul>
-                      <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                     <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                     <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                </ul>
             </div>
         </div>
-    </body>
+        <img src="images/wave.png" class="bottom-img">
+    </section>
+
+    <!----------Services Section---------------->
+
+    <section id="services">
+        <div class="container text-center">
+            <h1 class="title">CHECK THIS OUT</h1>
+            <div class="row text-center">
+                <div class="col-md-4 services">
+                    <img src="images/challenges.png" class="services-img">
+                    <h4>Take Challenges</h4>
+                    <p>The scale of the challenges facing our planet can seem daunting, but we can all do something.</p>
+
+                </div>
+                <div class="col-md-4 services">
+                    <img src="images/graphs.png" class="services-img">
+                    <h4>Charts</h4>
+                    <p>The scale of the challenges facing our planet can seem daunting, but we can all do something.</p>
+
+                </div>
+                <div class="col-md-4 services">
+                    <img src="images/event.png" class="services-img">
+                    <h4>Events</h4>
+                    <p>The scale of the challenges facing our planet can seem daunting, but we can all do something.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------About us----------------->
+    <section id="about-us">
+        <div class="container">
+            <h1 class="title text-center">Why Choose Us?</h1>
+            <div class="row">
+                <div class="col-md-6 about-us">
+                    <p class="about-title">Why we're different</p>
+                    <ul>
+                        <li>Using only Open-data</li>
+                        <li>Wesbite is for Social good</li>
+                        <li>ANyone can have access to the data we have</li>
+                        <li>We the best music</li>
+                        <li>MR.Worlwide</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/chooseus.png" class="img-fluid" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!---------------------Testimonials------------------>
+    <section id="testimonials">
+        <div class="container">
+            <h1 class="title text-center">What our Clients Say?</h1>
+            <div class="row offset-1">
+                <div class="col-md-5 testimonials">
+                    <p>“can I speak to your manager?”</p>
+                    <img src="images/karen.jpg" alt="">
+                    <p class="user-details">
+                        <b>Karen</b>
+                        <br>The anti-vaxxer soccer mom with speak-to-the-manager hair
+                    </p>
+                </div>
+                <div class="col-md-5 testimonials">
+                    <p>"Hello betiful, send me bobs and vagene pliss "</p>
+                    <img src="images/vishal (2).jpeg" alt="">
+                    <p class="user-details">
+                        <b>Vishal Kumar Yadav</b>
+                        <br>Smuggler / F Grade Student
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--------------------Social Media--------------------->
+    <section id="social-media">
+        <div class="container text-center">
+            <p>Find Us on Social Media</p>
+            <div class="social-linkedIn">
+                <a href="#"><img src="images/karen.jpg" alt=""></a>
+                <a href="#"><img src="images/karen.jpg" alt=""></a>
+                <a href="#"><img src="images/karen.jpg" alt=""></a>
+                <a href="#"><img src="images/karen.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <!--------FOOTER SECTION------------------------->
+    <section id="footer">
+        <img src="images/wave2.png" class="footer-img" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 footer-box">
+                    <img src="images/kawai.png" alt="">
+                    <p>
+                        Need a jump start? Read on to learn a few simple day-to-day strategies to help the environment.
+                        You might be surprised at how much they help you in the process.
+                    </p>
+                </div>
+                <div class="col-md-4 footer-box">
+                    <p><b>Contact Us</b></p></b></p>
+                    <p><i class="fas fa-map-signs"></i> Monash University,Caulfield</p>
+                    <p><i class="fas fa-phone-square"></i> +61 134 324 333</p>
+                    <p><i class="fas fa-envelope-open-text"></i> pussyslayer69@hotmail.com</p>
+
+                </div>
+                <div class="col-md-4 footer-box">
+                    <p><b>Subscribe to Newsletter</b></p>
+                    <input type="email" class="form-control" aria-placeholder="Your Emailb Address">
+                    <button type="button" class="btn btn-primary">Subscribe</button>
+
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Website Create by Agile Lads</p>
+        </div>
+    </section>
+
+</body>
+
 </html>
