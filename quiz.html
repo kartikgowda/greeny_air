@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Greeny Air Website Prototype</title>
+    <title>Greeny Air - CHALLENGES</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -36,20 +36,35 @@
         </nav>
     </section>
 
-    <!------------------Quiz SECTION-------------------->
+    <!------------------Quiz SECTION----------------->
     <div class="wrapper">
-        <div class="welcome-text">
-            <form class="welcome-form" name="welcome-form" onsubmit="submitForm(event)">
-                <input type="text" name="name">
-                <button type="submit">Start Quiz</button>
-            </form>
-
+        <div class="quiz">
+            <div class="quiz_header">
+                <div class="quiz_user">
+                    <h4>Welcome! Kartik</h4>
+                </div>
+                <div class="quiz_timer">
+                    <span class="time">00:00</span>
+                </div>
+            </div>
+            <div class="quiz_body">
+                <div id="questions">
+                    <!-- <h2>What do you want to change?</h2>
+                <ul class="option_group">
+                    <li class="option">Option 1</li>
+                    <li class="option">Option 2</li>
+                    <li class="option">Option 3</li>
+                    <li class="option">Option 4</li>
+                </ul> -->
+                </div>
+                <button class="btn_next" onclick="next()">Next</button>
+            </div>
         </div>
     </div>
     <script src="script/js/quiz.js"></script>
 
     <!--------FOOTER SECTION------------------------->
-    <section id="footer">
+    <section id=SQAA "footer">
         <img src="images/wave2.png" class="footer-img" alt="">
         <div class="container">
             <div class="row">
